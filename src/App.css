@@ -1,0 +1,144 @@
+/* Background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #6366f1, #c8dfff, #0ea5e9);
+  min-height: 89vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+/* App Container */
+.app {
+  background: #1e293b;
+  color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 500px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Header */
+.header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #38bdf8;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.7);
+}
+
+.header p {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+  margin-bottom: 20px;
+}
+
+/* Input + Button */
+.generator-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.generator-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+}
+
+.generator-box button {
+  background: #3b82f6;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.generator-box button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Content List */
+.content-list {
+  margin-top: 15px;
+  max-height: 400px;
+  overflow-y: auto;
+  padding-right: 5px;
+}
+
+.empty {
+  color: #94a3b8;
+  text-align: center;
+  font-style: italic;
+}
+
+/* Content Card */
+.content-card {
+  background: #334155;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  animation: slideUp 0.5s ease-in-out;
+}
+
+.content-card h3 {
+  margin-top: 0;
+  color: #38bdf8;
+}
+
+.content-card pre {
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #f1f5f9;
+}
+
+.content-card .time {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scrollbar */
+.content-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.content-list::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
